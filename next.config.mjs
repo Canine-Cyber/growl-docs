@@ -5,6 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization
   },
+  assetPrefix: isProd ? "/your-repository-name/" : "",
+  basePath: isProd ? "/your-repository-name" : "",
   output: "export", // <=== enables static exports
 };
 
