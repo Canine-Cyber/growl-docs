@@ -1,0 +1,25 @@
+# Features 🚀
+
+## Input Blocking and Warning ⭐
+
+On page load, if the following two conditions are both met, automatically
+block input elements (with stylized growl placeholders), removing the user's
+ability to interact with them, and display a popup notification (in which the
+user has controls to turn this behavior on or off).
+
+1.  The page is classified as potentially untrusted.
+
+2.  There are input elements on the page.
+
+Exception:
+If user has previously whitelisted the site (either temporarily or
+persistently), the above behavior is overridden. The popup is still
+displayed, however, to remind the user the domain was initially classified as
+potentially suspicious, and to give them the opportunity to toggle back the
+controls.
+
+## Disable Blocking & Whitelist ⭐
+
+The extension's popup UI gives the user the opportunity to control growl's
+behavior on the site now and in the future (that is, to remember the user's
+choice in future browsing sessions and persist changes) through interactive buttons.

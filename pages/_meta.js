@@ -1,5 +1,5 @@
 export default {
-  index: "My Homepage",
-  contact: "Contact Us",
-  about: "About Us",
+  index: "Home",
+  overview: "Overview",
+  features: "Features",
 };
