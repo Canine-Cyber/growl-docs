@@ -10,7 +10,7 @@ export default {
           <meta property="og:title" content="growl docs" />
           <meta property="og:description" content="Documentation for the Chrome browser extension growl." />
           {/* Favicon */}
-          <link rel="shortcut icon" href="growl-logo-favicon-16.png"/>
+          <link rel="icon" href="growl-logo-favicon-16.png"/>
         </>
       ),
     logo: (
