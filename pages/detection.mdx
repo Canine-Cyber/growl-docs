@@ -1,0 +1,16 @@
+# Detection Algorithm 🔍🚨
+
+For our prototype (major version zero) releases, a "dumb" – but effective – detection algorithm is used to identify potentially unsafe websites. In particular, _any_ webpage will be flagged if it meets both of the following criteria:  
+ <br/>
+
+- [ ] It resides on a very unpopular website.
+- [ ] It contains interactive text content such as form input fields.
+
+A **very unpopular website** is defined as one whose popularity rank is outside the top 1-million domain names on the internet, according to [Tranco](https://tranco-list.eu/), an independent [open-source](https://github.com/DistriNet/tranco-list) project that ranks sites using a robust formula to combine data aggregated from several sources. Read more about their methodology [here](https://tranco-list.eu/methodology).
+
+This bare-bones detection algorithm is fundamentally **_heuristic_**. It provides a simple yet highly effective way to combat digital fraud and scams, given that most occur on sites that receive little traffic. False alarms (false positives) are rare, as normal users don't visit highly unpopular sites very often. And when such false alarms occur, they're of little consequence – the user can easily dismiss them if they're confident there's no threat, while the notification serves as a reminder to remain vigilant.[^a]
+
+Future releases will hone the detection algorithm. A major enhancement we have planned on the horizon is "smart" detection – leveraging machine-learning techniques and artificial intelligence to assess site trustworthiness.
+
+
+[^a]: <small>False negatives are, of course, possible. This occurs when the algorithm fails to classify a malicious site as such—consequently, `growl` would fail to block content and fail to warn the user. But no security product or detection algorithm is perfect, and in the field of cybersecurity, we can never expect to fully eliminate all risk. Still, security practitioners strive to reduce risk to an acceptable level by adopting defensive tools, policies, and behaviors. `growl` is intended to be used as _one of many_ defensive security mechanisms to achieve the goal of risk reduction—not as the only defense!</small>
